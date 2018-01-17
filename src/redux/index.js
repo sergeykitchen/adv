@@ -7,7 +7,7 @@ import history from '../history';
 
 const enhancer = applyMiddleware(routerMiddleware(history), thunk, logger);
 const store = createStore(reducer, enhancer);
-
+    
 store.window = store;
 
 export default store;
